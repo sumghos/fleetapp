@@ -4,7 +4,7 @@
 
 $('document').ready(function(){
 	
-	$('table #editbutton').on('click',function(event){
+	$('table #editButton').on('click',function(event){
 		event.preventDefault();
 		var href = $(this).attr('href'); // /Country/findbyidCountry/?id=1
 		$.get(href,function(Country, status){

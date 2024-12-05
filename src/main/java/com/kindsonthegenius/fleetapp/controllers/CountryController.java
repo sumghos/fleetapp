@@ -37,9 +37,9 @@ public class CountryController {
 	}
 	
 	//Update Country
-	@RequestMapping("Country/findbyidCountry")
+	@RequestMapping(value = "/Country/findbyidCountry/{id}")
 	@ResponseBody
-	public Optional<Country> findById( Integer id) {
+	public Optional<Country> findById(@PathVariable("id") Integer id) {
 		return countryService.findById(id);
 	}
 	
